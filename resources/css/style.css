@@ -8,26 +8,36 @@ body{
 
 }
 
-  main{
+main{
+  height: 800px;
   width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   position: relative;
   top: 0;
   background: pink
 }
 /*Header with logo, Name, Navigation*/
-header.banner{
+
+header{
   display: flex;
-  align-items: center;
-  height: 5rem;
-  justify-items: flex-start;
-  width: 960px;
-  margin: 0 auto;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 1rem;
   position: absolute;
-  top: 3rem;
+  top: 0;
+  width: 960px;
   background-color: cadetblue;
   color: white;
 }
+/*
+.logo{
+  display: flex;
+  align-items: center;
+
 header img{
   height: 1.5rem;
   margin-left: .5rem;
@@ -37,14 +47,17 @@ header img{
 header p{
   background-color: cadetblue;
 }
+
 /* Top full width picture */
+/*
 .jumbotron{
   width: 100%;
-/*  background-image: url(../images/glasses-bg.png);  */
+  background-image: url(../images/glasses-bg.png);
   background-size: cover;
   height: 30rem;
 }
 /* Floating banner in jumbotron */
+/*
 h1{
   font-size: 2rem;
   margin-left: 3rem;
