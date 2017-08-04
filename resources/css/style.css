@@ -8,22 +8,21 @@ html{
 body{
   font-family: Helvetica;
 }
-main{
-  background: url(../images/glasses-bg.png);  /*Jumbotron background picture*/
+.jumbotron{
+  background-image: url(../images/glasses-bg.png);  /*jumbotron  picture*/
   background-size: cover;
-  height: 31rem;
+  height: 30rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-/*__________Upper section container__________*/
+/*__________General content container__________*/
 
 .content{
   width: 960px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   position: relative;
 }
 
@@ -69,6 +68,9 @@ a{
   text-decoration: none;
   color: white;
 }
+.small{
+  display: none;
+}
 
 /*__________Jumbotron floating banner__________*/
 
@@ -84,32 +86,65 @@ h1{
   top: calc(10rem + 4.4rem);
   right: -2rem;
 }
-/* Top full width picture */
-/*
-.jumbotron{
-  width: 100%;
-  background-image: url(../images/glasses-bg.png);
-  background-size: cover;
-  height: 30rem;
+
+/*__________Services - Exam, Fittings, Delivery __________*/
+
+.services{
+  width: 960px;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
 }
-/* Floating banner in jumbotron */
-/*
-h1{
-  font-size: 2rem;
-  margin-left: 3rem;
-  padding-bottom: 2rem;
+.service, .service_wide{
+  height: 8rem;
+  margin: 0 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-.banner{
-  background-color: white;
-  color: black;
+.service img{
+  width: 3.5rem;
 }
-.main.banner{
-  width: 25rem;
-  position: absolute;
-  top: 9rem;
-  right: 0rem;
+.service_wide img{
+  width: 5rem;
 }
 
+/*__________Information - Philosophy, Appointemts __________*/
+.info_container{
+  width: 960px;
+  margin: 0 auto 5rem auto;
+  display: flex;
+  justify-content: center;
+}
+.info{
+  width: 35%;
+  margin: 0 2.5%;
+}
+.info h2{
+  width: 10rem;
+  padding: 0.5rem 0 0.5rem 1.25rem ;
+  font-weight: bold;
+  background-color: cadetblue;
+  color: white;
+}
+.info p{
+  margin-top: 1rem;
+}
+
+/*__________Information - Philosophy, Appointemts __________*/
+footer{
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: azure;
+}
+footer img{
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
 /*
 h4{
   font-size: 1rem;
