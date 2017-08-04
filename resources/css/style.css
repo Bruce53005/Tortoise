@@ -2,25 +2,32 @@ html{
   font-size: 18px;
   font-family: Helvetica;
 }
-/*Site content container*/
-body{
-  background: aqua;
 
+/*__________Site content containers___________*/
+
+body{
+  font-family: Helvetica;
+}
+main{
+  background: url(../images/glasses-bg.png);  /*Jumbotron background picture*/
+  background-size: cover;
+  height: 31rem;
+  display: flex;
+  justify-content: space-around;
 }
 
-main{
-  height: 800px;
+/*__________Upper section container__________*/
+
+.content{
   width: 960px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   position: relative;
-  top: 0;
-  background: pink
 }
-/*Header with logo, Name, Navigation*/
+
+/*__________Header with logo & Name__________*/
 
 header{
   display: flex;
@@ -28,26 +35,55 @@ header{
   align-content: center;
   font-size: 1rem;
   position: absolute;
-  top: 0;
+  top: 1rem;
   width: 960px;
+  padding: 1rem 0;
   background-color: cadetblue;
   color: white;
 }
-/*
 .logo{
   display: flex;
   align-items: center;
-
-header img{
+}
+.logo img{
   height: 1.5rem;
-  margin-left: .5rem;
-  margin-right: 1rem;
-  background-color: cadetblue;
-}
-header p{
-  background-color: cadetblue;
+  padding-left: 2rem;
+  padding-right: 1rem;
 }
 
+/*__________Header Nav Menu__________*/
+
+nav{
+  display:flex;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+nav li{
+  padding-right: 2rem;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/*__________Jumbotron floating banner__________*/
+
+h1{
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.banner h1{
+  background-color: white;
+  padding: 1.5rem 5rem;
+  position: absolute;
+  top: calc(10rem + 4.4rem);
+  right: -2rem;
+}
 /* Top full width picture */
 /*
 .jumbotron{
