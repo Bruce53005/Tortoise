@@ -111,7 +111,11 @@ h1{
 
 
 @media only screen and (max-width: 470px) {
-  .jumbotron{
+    .logo span{
+        display: none;
+    }
+    
+    .jumbotron{
     height: 17rem;
   }
   .large{
@@ -135,7 +139,26 @@ h1{
     right: 0;
     top: calc(9rem + 4.4rem);
   }
-
+    .services {
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info_container{
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info{
+        max-width: 100%;  
+        }
+    .info h2, .info p{
+        max-width: 100%;
+    }
+    footer{
+        max-width: 100%;
+        justify-content: center;
+    }
 }
 
 /*__________Services - Exam, Fittings, Delivery __________*/
