@@ -87,80 +87,6 @@ h1{
   right: -2rem;
 }
 
-/*__________Media query__________*/
-
-@media only screen and (max-width: 1024px) {
-  .jumbotron{
-    height: 22rem;
-  }
-  header{
-    top: 0;
-    width: 100%;
-  }
-  h1{
-    font-size: 1.33rem;
-    font-weight: bold;
-    line-height: 1.2;
-  }
-  .banner h1{
-    padding: 0.75rem 4rem;
-    top: calc(5rem + 4.4rem);
-    right: 2rem;
-  }
-}
-
-
-@media only screen and (max-width: 470px) {
-    .logo span{
-        display: none;
-    }
-    
-    .jumbotron{
-    height: 17rem;
-  }
-  .large{
-    display: none;
-  }
-  .small{
-    display: block;
-  }
-  h1{
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 1;
-    text-align: center;
-  }
-  .banner{
-    width: 100%;
-  }
-  .banner h1{
-    padding: 1rem 0;
-    width: 100%;
-    right: 0;
-    top: calc(9rem + 4.4rem);
-  }
-    .services {
-        max-width: 100%;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .info_container{
-        max-width: 100%;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .info{
-        max-width: 100%;  
-        }
-    .info h2, .info p{
-        max-width: 100%;
-    }
-    footer{
-        max-width: 100%;
-        justify-content: center;
-    }
-}
-
 /*__________Services - Exam, Fittings, Delivery __________*/
 
 .services{
@@ -198,6 +124,7 @@ h1{
 }
 .info h2{
   width: 10rem;
+  font-size: 1rem;
   padding: 0.5rem 0 0.5rem 1.25rem ;
   font-weight: bold;
   background-color: cadetblue;
@@ -207,7 +134,7 @@ h1{
   margin-top: 1rem;
 }
 
-/*__________Information - Philosophy, Appointemts __________*/
+/*__________Footer__________*/
 footer{
   width: 960px;
   margin: 0 auto;
@@ -220,6 +147,89 @@ footer img{
   padding: 4rem 1rem 4rem 4rem;
 }
 
+/*__________Media query__________*/
+
+@media only screen and (max-width: 1024px) {
+  .jumbotron{
+    height: 22rem;
+  }
+  header{
+    top: 0;
+    width: 100%;
+  }
+  h1{
+    font-size: 1.33rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  .banner h1{
+    padding: 0.75rem 4rem;
+    top: calc(5rem + 4.4rem);
+    right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .logo span{
+    display: none;
+  } 
+  .jumbotron{
+    height: 17rem;
+  }
+  .large{
+    display: none;
+  }
+  .small{
+    display: block;
+  }
+  .jumbotron{
+    background-position: 20%;
+  }
+  h1{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    
+  }
+  .banner{
+    width: 100%;
+  }
+  .banner h1{
+    text-align: center;
+    width: 100%;
+    right: 0;
+    top: calc(9rem + 4.4rem);
+  }
+  .services {
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3.77rem 0;
+  }
+  .services p{
+    font-size: 0.77rem;
+  }
+  .service, .service_wide{
+    height: 6rem;
+    margin: 1.54rem;
+  }
+  .info_container{
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info{
+    width: 100%;  
+  }
+  .info h2, .info p{
+    width: 100%;
+    text-align: center;
+  }
+  footer{
+    max-width: 100%;
+    justify-content: center;
+  }
+}
 
 
 /*
