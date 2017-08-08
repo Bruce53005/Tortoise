@@ -172,7 +172,7 @@ footer img{
 @media only screen and (max-width: 470px) {
   .logo span{
     display: none;
-  } 
+  }
   .jumbotron{
     height: 17rem;
   }
@@ -189,16 +189,17 @@ footer img{
     font-size: 1rem;
     font-weight: bold;
     line-height: 1;
-    
+
   }
   .banner{
     width: 100%;
   }
   .banner h1{
+    position: relative;
     text-align: center;
-    width: 100%;
+    max-width: 100%;
     right: 0;
-    top: calc(9rem + 4.4rem);
+    top: 6rem;
   }
   .services {
     max-width: 100%;
@@ -215,16 +216,28 @@ footer img{
   }
   .info_container{
     max-width: 100%;
+    height: auto;
     flex-direction: column;
     justify-content: center;
+    padding: 0;
+    margin: 0;
   }
   .info{
-    width: 100%;  
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
   .info h2, .info p{
     width: 100%;
     text-align: center;
+    padding: 0;
+    margin: 0;
   }
+  .info p{
+    width: 85%;
+    margin-left: 2rem;
+  }
+
   footer{
     max-width: 100%;
     justify-content: center;
